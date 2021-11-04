@@ -53,11 +53,27 @@ public class Week4 {
     }
 
     static void sixthTask(){
+
         StringBuilder firstLetters = new StringBuilder();
+
         for (String aString :
                 anArrayList) {
             firstLetters.append(aString.charAt(0));
         }
         System.out.print(firstLetters);
+    }
+
+    static void seventhTask(){
+
+        String longestString = anArrayList.get(0);
+
+        for (String aString :
+                anArrayList) {
+
+            if ( longestString.length() < aString.length() )
+                longestString = aString;
+        }
+
+        System.out.print(longestString);
     }
 }
