@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Week4 {
 
-    static String[] forFourthTask = {"moo","bark","meow","rawr","screech","chirp","growl","buzz","quack"};
+    static String[] anArray = {"moo","bark","meow","rawr","screech","chirp","growl","buzz","quack"};
+    static ArrayList<String> anArrayList = new ArrayList<>();
 
     static void firstTask(){
         for (int i = 0; i <= 100; i++) {
@@ -39,7 +40,15 @@ public class Week4 {
     }
 
     static void fourthTask(){
-        for (String aString: forFourthTask)
+        for (String aString: anArray)
             System.out.print(aString + ", ");
+    }
+
+    static void fifthTask(){
+        for (String aString :
+                anArray) {
+            anArrayList.add(aString);
+        }
+        System.out.print(anArrayList.toString());
     }
 }
