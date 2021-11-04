@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Week4 {
 
@@ -76,4 +77,27 @@ public class Week4 {
 
         System.out.print(longestString);
     }
+
+    static void eighthTask(){
+        byte[][] matrix = new byte[10][10];
+
+        for ( byte row=0; row<10; row++ ) {
+            for ( byte col = 0; col < 10; col++ ) {
+                if ( row % 2 == 0 && col % 2 == 0 )
+                    matrix[row][col] = 0;
+                else if ( row % 2 != 0 && col % 2 != 0)
+                    matrix[row][col] = 2;
+                else if ( row % 2 != 0 || col % 2 != 0 )
+                    matrix[row][col] = 1;
+            }
+        }
+
+        for ( byte i = 0; i < 10; i++ ) {
+            for ( byte j = 0; j < 10; j++ ) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }

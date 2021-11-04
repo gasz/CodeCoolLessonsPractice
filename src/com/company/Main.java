@@ -24,5 +24,8 @@ public class Main {
 
         System.out.println("\n\nSixth Task");
         Week4.seventhTask();
+
+        System.out.println("\n\nEighth Task");
+        Week4.eighthTask();
     }
 }
