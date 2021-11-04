@@ -18,5 +18,8 @@ public class Main {
 
         System.out.println("\n\nFifth Task");
         Week4.fifthTask();
+
+        System.out.println("\n\nSixth Task");
+        Week4.sixthTask();
     }
 }

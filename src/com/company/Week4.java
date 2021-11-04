@@ -51,4 +51,13 @@ public class Week4 {
         }
         System.out.print(anArrayList.toString());
     }
+
+    static void sixthTask(){
+        StringBuilder firstLetters = new StringBuilder();
+        for (String aString :
+                anArrayList) {
+            firstLetters.append(aString.charAt(0));
+        }
+        System.out.print(firstLetters);
+    }
 }
